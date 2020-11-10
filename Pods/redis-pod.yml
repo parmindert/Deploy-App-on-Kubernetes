@@ -1,0 +1,17 @@
+api version: v1
+kind: Pod
+metadata:
+  name: redis-pod
+  labels:
+    name: redis-pod
+    app: demo-voting-app
+
+
+
+
+spec:
+  Containers:
+    -name: result-appredis
+    image: redis
+    ports:
+      -containerPort: 6379
